@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #F9F8F5;
+    --bg-secondary: #F2EFE9;
+    --bg-card: #FFFFFF;
+    --bg-card-warm: #FAF8F3;
+    --text-primary: #121210;
+    --text-secondary: #5A5852;
+    --text-muted: #8A8880;
+    --accent: #E63B2E;
+    --accent-hover: #C92F23;
+    --accent-light: #FCECE9;
+    --border-editorial: #E5E0D6;
+    --border-dark: #121210;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Instrument Serif', Georgia, serif;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  .font-mono-code {
+    font-family: 'Space Mono', monospace;
+  }
+
+  .font-handwritten {
+    font-family: 'Caveat', cursive;
+  }
+}
+
+/* Editorial design accents */
+.editorial-border {
+  border: 1px solid var(--border-editorial);
+}
+
+.editorial-border-b {
+  border-bottom: 1px solid var(--border-editorial);
+}
+
+.editorial-border-t {
+  border-top: 1px solid var(--border-editorial);
+}
+
+.editorial-border-r {
+  border-right: 1px solid var(--border-editorial);
+}
+
+.editorial-border-l {
+  border-left: 1px solid var(--border-editorial);
+}
+
+.paper-texture {
+  background-color: #F9F8F5;
+  background-image: radial-gradient(rgba(18, 18, 16, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.paper-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-editorial);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 8px 24px -12px rgba(18, 18, 16, 0.05);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+
+.paper-card:hover {
+  border-color: #121210;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 16px 36px -12px rgba(18, 18, 16, 0.09);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F9F8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8D2C6;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #121210;
+}
+
+/* Micro badges & stamps */
+.stamp-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  background-color: #F2EFE9;
+  border: 1px solid #E2DDD3;
+  color: #121210;
+}
+
+.stamp-accent {
+  background-color: var(--accent-light);
+  border-color: #F6CAC2;
+  color: var(--accent);
+}
+
+/* Hover reveal & image zoom */
+.editorial-img-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.editorial-img-container img {
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .editorial-img-container img,
+.editorial-img-container:hover img {
+  transform: scale(1.035);
+}
+
+/* Marquee / Ticker */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 28s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticker {
+    animation: none;
+  }
+  .paper-card, .editorial-img-container img {
+    transition: none;
+  }
+}

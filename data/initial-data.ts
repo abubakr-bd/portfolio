@@ -1,0 +1,488 @@
+import { DatabaseSchema } from "@/lib/types";
+
+export const initialData: DatabaseSchema = {
+  settings: {
+    name: "Abu Bakr",
+    title: "Designer, Builder & Entrepreneur",
+    heroTagline: "HEY, I'M ABU BAKR.",
+    heroTitle: "I BUILD THINGS THAT TURN IDEAS INTO SOMETHING REAL.",
+    heroSubtitle: "A young Bangladeshi entrepreneur, creative technologist, and designer working across web architecture, video editing, motion design, brand identity, and digital products.",
+    location: "Dhaka, Bangladesh",
+    coordinates: "23.8103° N, 90.4125° E",
+    age: "18",
+    email: "contact@motionly.media",
+    phone: "+880 1570-212260",
+    whatsapp: "+880 1570-212260",
+    profileImage: "/images/portrait-editorial.png",
+    profileCutout: "/images/portrait-cutout.png",
+    originImage: "/images/bangladesh-map.png",
+    socialLinks: {
+      instagram: "https://instagram.com/abubakr",
+      linkedin: "https://linkedin.com/in/abubakr",
+      github: "https://github.com/abubakr",
+      behance: "https://behance.net/abubakr",
+      youtube: "https://youtube.com/@motionly",
+      x: "https://x.com/abubakr"
+    },
+    stats: {
+      projectsCompleted: 48,
+      clientsWorldwide: 26,
+      yearsBuilding: 4,
+      productsLaunched: 5,
+      reachCount: "500K+"
+    },
+    visionStatement: "I DON'T JUST WANT TO MAKE THINGS LOOK GOOD. I WANT TO BUILD THINGS THAT MATTER.",
+    visionDetails: "I believe true craft is where aesthetics, code, and commercial value meet. Coming from Dhaka, my ambition is to prove that world-class software, media brands, and digital ventures can be engineered right here in Bangladesh.",
+    originStory: "I started tinkering on secondhand computers in Dhaka when I was just 14. First it was graphic layouts, then frame-by-frame video timing, then full-stack web code. I quickly realized: when you understand how to design, how to tell stories with video, and how to write software, you don't need a corporate playbook to make an impact. You just build.",
+    defaultSeoTitle: "Abu Bakr — Entrepreneur, Designer & Builder from Bangladesh",
+    defaultSeoDescription: "Abu Bakr is a young Bangladeshi entrepreneur, designer and builder working across web design, video editing, branding, technology and digital products.",
+    availableForWork: true
+  },
+  projects: [
+    {
+      id: "proj-1",
+      slug: "motionly-ecosystem",
+      title: "Motionly Media & Academy",
+      category: "Business / Startup",
+      client: "Motionly Media",
+      year: "2025–2026",
+      role: "Founder, Creative Technologist & Director",
+      shortDescription: "Building a full-cycle creative engine for modern brands and creators — combining high-retention video systems, brand architecture, and a dedicated training academy.",
+      featured: true,
+      published: true,
+      problem: "Most creative agencies rely on disconnected freelance work and outdated video pacing. Startups and creators waste thousands on pretty edits that get zero audience retention or measurable business conversion.",
+      idea: "Design an integrated retention-first media ecosystem ('From Hook to Retention: Making your business in Motion') paired with an academy ('Agency Alap') to empower the next generation of Bangladeshi creative entrepreneurs.",
+      process: "Engineered high-retention visual hooks, automated subtitle typography pipelines, custom web application architecture, and a structured curriculum covering content strategy, client acquisition, and team scaling.",
+      result: "Launched Motionly Media into an active creative house serving businesses across North America, Europe, and Bangladesh, while the Academy enrolled over 120 aspiring creators in its inaugural season.",
+      personalContribution: "Spearheaded brand strategy, full-stack website architecture, motion graphics templates, curriculum development, and public keynote lectures.",
+      outcome: "Generated over 15M+ combined impressions across client campaigns with average watch-through rates exceeding 45%.",
+      thumbnail: "/images/motionly-hero.png",
+      gallery: [
+        "/images/motionly-hero.png",
+        "/images/motionly-lecture.png",
+        "/images/motionly-academy.png"
+      ],
+      tags: ["Brand Identity", "Web Application", "Video Retention", "Entrepreneurship", "Next.js"],
+      seoTitle: "Motionly Media Case Study — Creative Ecosystem by Abu Bakr",
+      seoDescription: "How Abu Bakr founded Motionly Media and Motionly Academy to revolutionize conversion video and creative education in Bangladesh.",
+      order: 1
+    },
+    {
+      id: "proj-2",
+      slug: "equisaas-bd",
+      title: "EquiSaaS BD",
+      category: "Business / Startup",
+      client: "EquiSaaS Technologies",
+      year: "2025–2026",
+      role: "Co-Founder, Lead Product Designer",
+      shortDescription: "A unified enterprise platform delivering brand systems, web platforms, and automated workflow software for scaling organizations — award winner at Infinity AI BuildFest.",
+      featured: true,
+      published: true,
+      problem: "Traditional businesses struggle with fragmented vendor relationships: one contractor for graphic assets, one for web code, another for marketing, creating chaotic brand dilution.",
+      idea: "One agency. One system. One direction. EquiSaaS brings together corporate software architecture, precision branding, and digital execution into a streamlined single-pane-of-glass platform.",
+      process: "Designed complete UI/UX in Figma, implemented component design systems in Next.js & Tailwind, and pitched the system live at BRAC University and Notre Dame College technology symposiums.",
+      result: "Won major recognition at Infinity AI BuildFest, featured at national youth technology competitions, and secured pilot deployments with tech-forward SMEs in Dhaka.",
+      personalContribution: "Articulated the brand manifesto ('Stop Distorting Your Brand'), engineered the web application frontend, and delivered the stage keynote at the Grand Finale.",
+      outcome: "Top 3 finalist across 100+ collegiate teams, establishing high credibility among academic and venture mentors.",
+      thumbnail: "/images/equisaas-banner.png",
+      gallery: [
+        "/images/equisaas-banner.png",
+        "/images/equisaas-grandfinale.png",
+        "/images/equisaas-campaign.png"
+      ],
+      tags: ["SaaS Architecture", "Product Design", "AI Buildfest Winner", "Brand System"],
+      seoTitle: "EquiSaaS BD Case Study — Unified SaaS & Brand Engine",
+      seoDescription: "Case study on EquiSaaS BD by Abu Bakr: from whiteboard concept to Infinity AI BuildFest award recognition.",
+      order: 2
+    },
+    {
+      id: "proj-3",
+      slug: "varnox-scents",
+      title: "Varnox — Scents That Speak",
+      category: "Branding",
+      client: "Varnox Parfumerie",
+      year: "2025–2026",
+      role: "Brand Director & E-Commerce Architect",
+      shortDescription: "Complete brand identity, photorealistic 3D visual direction, bottle label typography, and conversion funnel for an artisanal winter fragrance collection.",
+      featured: true,
+      published: true,
+      problem: "Online fragrance purchases in emerging markets suffer from lack of sensory touch. Without smell, the visual storytelling and typographic hierarchy must carry 100% of the luxury perception.",
+      idea: "Created an immersive 'Winter Edition' visual atmosphere: crisp frost, rustic lantern warmth, dark obsidian textures, and four distinct persona fragrances: Icon, Magnet, Rebel, and Prime.",
+      process: "Designed label typography, crafted tactile 4x3ml discovery kit packaging, built the social conversion funnel, and orchestrated a teaser campaign across Instagram and Facebook.",
+      result: "The limited 500-box discovery kit batch sold out within 72 hours of launch with zero traditional ad spend.",
+      personalContribution: "Designed entire packaging identity, product visual mockups, copy direction, and digital checkout funnel.",
+      outcome: "Sold out within 3 days, 82% positive reviews, and created an established cult following in Dhaka's youth lifestyle segment.",
+      thumbnail: "/images/varnox-poster.jpg",
+      gallery: [
+        "/images/varnox-poster.jpg"
+      ],
+      tags: ["Luxury Branding", "Product Packaging", "Creative Direction", "E-Commerce"],
+      seoTitle: "Varnox Fragrances Case Study — Luxury Packaging & Identity",
+      seoDescription: "How Abu Bakr created the visual universe and packaging for Varnox Winter Edition fragrance line.",
+      order: 3
+    },
+    {
+      id: "proj-4",
+      slug: "shkscpc-carnival",
+      title: "SHKSCPC Media Carnival",
+      category: "Graphic Design",
+      client: "Shamsul Hoque Khan School & College Photography Club",
+      year: "2025–2026",
+      role: "Creative Lead & Identity Designer",
+      shortDescription: "Comprehensive visual branding, 40-foot main stage backdrops, certificates, badges, and digital collateral for the national-level student media festival.",
+      featured: true,
+      published: true,
+      problem: "Student media organizations frequently lack a cohesive design language, resulting in disjointed printed collateral that undermines event prestige.",
+      idea: "Developed a bold, energetic editorial identity marrying crimson sports dynamics, halftone camera patterns, and modern athletic typography.",
+      process: "Created 20+ print-ready assets including massive stage backdrops for Notre Dame College auditorium, award certificates, credentials, and digital broadcast overlays.",
+      result: "Successfully powered a 2-day festival hosting 1,200+ attendees and students from over 40 schools across Bangladesh.",
+      personalContribution: "Designed all core brand marks, festival banners, printed trophies, digital promo reels, and stage visuals.",
+      outcome: "Event celebrated as the highest attended photography club carnival in institution history.",
+      thumbnail: "/images/shkscpc-banner.png",
+      gallery: [
+        "/images/shkscpc-banner.png",
+        "/images/award-winners.jpg",
+        "/images/media-carnival-stage.jpg",
+        "/images/community-group.jpg"
+      ],
+      tags: ["Event Identity", "Print Design", "Stage Architecture", "Youth Media"],
+      seoTitle: "SHKSCPC Media Carnival — Event Branding Case Study",
+      seoDescription: "Visual identity design for one of Bangladesh's premier student photography and media festivals.",
+      order: 4
+    }
+  ],
+  experience: [
+    {
+      id: "exp-1",
+      company: "Motionly Media",
+      role: "Founder & Creative Technologist",
+      period: "2025 — Present",
+      startDate: "2025",
+      endDate: "Present",
+      current: true,
+      description: "Founded and scaled a creative technology agency focused on high-retention video production, brand architecture, and creator education.",
+      achievements: [
+        "Delivered 40+ client projects spanning the US, UK, and Bangladesh",
+        "Trained over 120 students in agency operations and video production through Motionly Academy",
+        "Developed custom motion and web assets powering 15M+ organic impressions"
+      ],
+      skills: ["Creative Direction", "Next.js", "Premiere Pro", "After Effects", "Business Strategy"],
+      order: 1
+    },
+    {
+      id: "exp-2",
+      company: "EquiSaaS BD",
+      role: "Co-Founder & Head of Product Design",
+      period: "2025 — Present",
+      startDate: "2025",
+      endDate: "Present",
+      current: true,
+      description: "Leading user experience, design systems, and frontend web development for unified business workflow and SaaS solutions.",
+      achievements: [
+        "Won top honours at Infinity AI Buildfest hosted at BRAC University",
+        "Engineered the responsive design system and core dashboard frontend",
+        "Presented enterprise brand architecture to industry leaders at Zero Olympiad"
+      ],
+      skills: ["Product Design", "Figma", "Tailwind CSS", "TypeScript", "Startup Growth"],
+      order: 2
+    },
+    {
+      id: "exp-3",
+      company: "SHKSC Photography Club (SHKSCPC)",
+      role: "Head of Creative & Media Production",
+      period: "2024 — 2026",
+      startDate: "2024",
+      endDate: "2026",
+      current: false,
+      description: "Led visual identity, photography exhibitions, and large-scale media carnivals involving dozens of institutional partners.",
+      achievements: [
+        "Directed branding for the 2nd Media Carnival at Notre Dame College",
+        "Mentored junior designers in typography, photo retouching, and composition",
+        "Created promotional video reels accumulating over 250,000 organic views"
+      ],
+      skills: ["Graphic Design", "Photography Direction", "Event Management", "Leadership"],
+      order: 3
+    },
+    {
+      id: "exp-4",
+      company: "Independent Builder & Freelancer",
+      role: "Full-Stack Designer & Motion Editor",
+      period: "2023 — 2024",
+      startDate: "2023",
+      endDate: "2024",
+      current: false,
+      description: "Began journey as a self-taught builder in Dhaka, creating logos, editing commercial video clips, and programming responsive landing pages.",
+      achievements: [
+        "Completed 25+ freelance commissions with 100% positive client feedback",
+        "Mastered the full modern web stack (React, Next.js, Node.js) and Adobe Creative Cloud",
+        "Studied machine learning fundamentals and published open design resources"
+      ],
+      skills: ["Self-Taught Engineering", "Photoshop", "HTML/CSS", "JavaScript", "DaVinci Resolve"],
+      order: 4
+    }
+  ],
+  currentlyBuilding: [
+    {
+      id: "cb-1",
+      project: "Motionly Academy 2.0",
+      whatItIs: "An interactive, cohort-based curriculum platform for modern Bangladeshi editors and builders to build sustainable digital agencies.",
+      role: "Founder & Lead Instructor",
+      status: "BUILDING",
+      progress: 85,
+      tags: ["Education", "Next.js", "Video Production"],
+      order: 1
+    },
+    {
+      id: "cb-2",
+      project: "EquiSaaS Cloud Suite",
+      whatItIs: "Modular SaaS tooling enabling local South Asian small businesses to manage brand assets, automated landing pages, and lead funnels.",
+      role: "Product Lead",
+      status: "ACTIVE",
+      progress: 72,
+      tags: ["SaaS", "Full-Stack", "AI Integrations"],
+      order: 2
+    },
+    {
+      id: "cb-3",
+      project: "Personal Brand OS",
+      whatItIs: "This bespoke editorial identity system and headless CMS, built as an interactive living archive of my journey from Dhaka.",
+      role: "Creator",
+      status: "ACTIVE",
+      progress: 100,
+      tags: ["Portfolio", "Next.js", "Design System"],
+      order: 3
+    },
+    {
+      id: "cb-4",
+      project: "Generative Motion Engine",
+      whatItIs: "Experimental Node.js & FFmpeg pipeline automating video hook variations and subtitle typographic animations for short-form video.",
+      role: "Researcher",
+      status: "EXPERIMENT",
+      progress: 45,
+      tags: ["Automation", "Motion Graphics", "Video Tech"],
+      order: 4
+    }
+  ],
+  journal: [
+    {
+      id: "art-1",
+      slug: "building-from-bangladesh",
+      title: "Why Young Builders in Bangladesh Shouldn't Wait for Permission",
+      excerpt: "The traditional advice in Dhaka is to finish your exams, wait until university, and follow a rigid template. Here is why self-directed builders who start at 16 are reshaping our digital economy.",
+      content: `### The Myth of the Right Time
+
+In Dhaka, students are told their entire childhood that creation belongs in the distant future. *"First finish SSC. Then HSC. Then university. Then think about working."*
+
+I started building things when I was 14. I didn't ask anyone for permission. I opened Photoshop on a modest PC, spent evenings studying typography and frame timing, and wrote my first lines of JavaScript.
+
+When you wait for external validation, you spend the most energetic, curious years of your life as a passive consumer of other people's software and media. The moment you decide to become a **builder**, everything shifts.
+
+---
+
+### What Building Actually Teaches You
+
+Traditional classrooms teach theoretical certainty. Building teaches you how to navigate uncertainty:
+1. **Taste precedes skill:** You know what good design looks like before your hands can produce it. Closing that gap requires hundreds of iterations.
+2. **Distribution is half the product:** A brilliant website that no one visits is a monument in a desert. Learning marketing and retention video forces you to empathize with real humans.
+3. **Execution beats pedigree:** In the global tech and design landscape, no client has ever asked me what school I went to. They only ask: *"Show me what you've built."*
+
+### Thinking Globally from Dhaka
+
+Being in Bangladesh is not a limitation — it is an asymmetric advantage if you leverage it right. We have endless grit, low cost of living, and an insatiable hunger to create. With an internet connection and a disciplined work ethic, a teenager in Dhaka has the same access to knowledge as a designer in Tokyo or San Francisco.
+
+Stop waiting for someone to hand you a title. Start building.`,
+      coverImage: "/images/story-learning.jpg",
+      category: "Entrepreneurship",
+      tags: ["Mindset", "Bangladesh", "Youth", "Startup"],
+      publishedDate: "October 2026",
+      author: "Abu Bakr",
+      readingTime: "4 min read",
+      featured: true,
+      published: true,
+      seoTitle: "Why Young Builders in Bangladesh Shouldn't Wait for Permission — Abu Bakr",
+      seoDescription: "An essay on youth entrepreneurship, creative agency, and building digital products in Dhaka by Abu Bakr."
+    },
+    {
+      id: "art-2",
+      slug: "video-retention-science",
+      title: "From Hook to Retention: What Makes Video Actually Convert in 2026",
+      excerpt: "A deep dive into visual pacing, narrative tension, and typographic psychology that turns fleeting social scrollers into high-value clients.",
+      content: `### The 1.8-Second Rule
+
+The modern internet is a ruthless attention auction. When someone scrolls their feed, you do not have thirty seconds to establish mood or introduce yourself. You have approximately 1.8 seconds before their thumb flicks you into oblivion.
+
+At Motionly Media, we analyzed hundreds of short-form and long-form video edits across client verticals. The difference between a video that flatlines at 2,000 views and one that drives $30,000 in inbound revenue boils down to three core principles.
+
+---
+
+### 1. Visual Cadence & Pattern Interrupts
+
+The human brain adapts rapidly to static stimuli. If your visual framing remains unchanged for more than 3.5 seconds, dopamine drops, and the viewer disconnects.
+- **Micro-zooms & reframing:** Subtle 3% push-ins on punchlines.
+- **Kinetic sound design:** Low risers, organic clicks, and atmospheric sweeps that guide subconscious attention.
+- **Contrast switching:** Intercutting stark monochrome statements with vibrant lifestyle footage.
+
+### 2. Typographic Scannability
+
+More than 65% of mobile viewers consume video without headphones. Subtitles are not an afterthought; they are the primary visual anchor.
+- Treat subtitles like editorial magazine headlines.
+- Use variable font weights to highlight actionable keywords.
+- Position text in the active gaze triangle (upper third) rather than crowding the native platform UI buttons.
+
+### 3. The Resolution Loop
+
+Never end a video with an abrupt 'Thanks for watching! Like and subscribe.' Instead, loop the conclusion seamlessly back into the opening premise. This doubles loop counts and triggers platform recommendation algorithms.
+
+Great video editing is not about flashy transitions — it is the psychological choreography of attention.`,
+      coverImage: "/images/motionly-lecture.png",
+      category: "Video & Media",
+      tags: ["Video Editing", "Attention Economics", "Marketing", "Motionly"],
+      publishedDate: "September 2026",
+      author: "Abu Bakr",
+      readingTime: "5 min read",
+      featured: true,
+      published: true,
+      seoTitle: "From Hook to Retention: Video Editing Psychology by Abu Bakr",
+      seoDescription: "Abu Bakr breaks down the mechanics of high-conversion video editing, attention hooks, and kinetic typography."
+    },
+    {
+      id: "art-3",
+      slug: "death-of-generic-freelancing",
+      title: "The Death of Generic Freelancing: Why Systems Win Over Hourly Labor",
+      excerpt: "Why exchanging hours for dollars on race-to-the-bottom freelancing marketplaces is dead, and how young builders must transition into productized offerings.",
+      content: `### The Marketplace Trap
+
+Every year, thousands of talented youth in South Asia register on freelancing marketplaces with the same generic headline: *"Professional Graphic Designer & Video Editor - $10/hour."*
+
+Within six months, 90% of them are exhausted, underpaid, and frustrated. Why? Because when you sell raw hours, your client looks at you as an interchangeable cost center.
+
+---
+
+### The Shift to Productized Brand Systems
+
+When I transitioned from taking one-off design requests to building cohesive entities like **Motionly** and **EquiSaaS**, three things changed immediately:
+
+1. **You sell business outcomes, not Photoshop layers:** A client does not want an MP4 file. They want 20 high-ticket discovery calls booked this month. Frame your work around the outcome.
+2. **You package reusable systems:** Instead of starting from scratch every project, build your own modular components — video pacing structures, Next.js UI libraries, typography templates.
+3. **You build equity:** An agency with branded IP, an engaged community, and proprietary workflows holds enterprise value. An isolated freelancer just has a job with no safety net.
+
+If you are a young designer or developer reading this: step out of the marketplace trenches. Own your name. Build your own digital home. Position yourself as a strategic partner, not a task-taker.`,
+      coverImage: "/images/equisaas-campaign.png",
+      category: "Business",
+      tags: ["Freelancing", "Agency", "Pricing", "Systems"],
+      publishedDate: "August 2026",
+      author: "Abu Bakr",
+      readingTime: "4 min read",
+      featured: false,
+      published: true,
+      seoTitle: "The Death of Generic Freelancing — Abu Bakr",
+      seoDescription: "Why hourly freelancing is dying and how productized creative systems and founder identity are the future."
+    }
+  ],
+  testimonials: [
+    {
+      id: "test-1",
+      quote: "Abu Bakr is that rare breed of builder who understands aesthetics, code, and business psychology simultaneously. His work for our launch completely exceeded expectations.",
+      name: "Tanzim Ahmed",
+      company: "EquiSaaS Technologies",
+      role: "Managing Director",
+      avatar: "/images/story-school.jpg",
+      featured: true,
+      rating: 5
+    },
+    {
+      id: "test-2",
+      quote: "Motionly Media transformed our video retention rate from under 20% to nearly 50%. Abu Bakr doesn't just edit video; he engineers narrative hooks that make viewers stay.",
+      name: "Farhan Kabir",
+      company: "Creator Studio BD",
+      role: "Co-Founder",
+      avatar: "/images/award-winners.jpg",
+      featured: true,
+      rating: 5
+    },
+    {
+      id: "test-3",
+      quote: "The visual branding for the SHKSCPC Media Carnival was flawless. From the 40-foot main stage backdrop to credentials and certificates, Abu Bakr delivered world-class design under intense festival timelines.",
+      name: "Rahim Chowdhury",
+      company: "SHKSCPC",
+      role: "Club President",
+      avatar: "/images/media-carnival-stage.jpg",
+      featured: true,
+      rating: 5
+    }
+  ],
+  skills: [
+    {
+      id: "sk-1",
+      category: "WEB & CODE",
+      description: "Modern full-stack web applications, interactive interfaces, and performant headless architecture.",
+      skills: [
+        { name: "Next.js & React 19", level: "Expert", note: "App router, SSR/SSG, Server Actions" },
+        { name: "TypeScript", level: "Advanced", note: "Strict typing, robust schema architecture" },
+        { name: "Tailwind CSS", level: "Expert", note: "Custom design systems, fluid responsive typography" },
+        { name: "Supabase & PostgreSQL", level: "Advanced", note: "Row-level security, relational data modeling" },
+        { name: "Node.js & REST APIs", level: "Advanced", note: "Backend endpoints, automation pipelines" },
+        { name: "Git & Vercel", level: "Expert", note: "Continuous deployment and version control" }
+      ]
+    },
+    {
+      id: "sk-2",
+      category: "VIDEO & MOTION",
+      description: "High-retention commercial video editing, narrative pacing, and kinetic motion graphics.",
+      skills: [
+        { name: "Adobe Premiere Pro", level: "Master", note: "High-cadence narrative editing and multi-track pacing" },
+        { name: "Adobe After Effects", level: "Advanced", note: "Kinetic typography, tracking, 2D motion graphics" },
+        { name: "DaVinci Resolve", level: "Advanced", note: "Color grading and cinematic visual tone" },
+        { name: "Retention Pacing", level: "Master", note: "Hook mechanics, sound design, visual pattern interrupts" },
+        { name: "CapCut Pro & Short-Form", level: "Master", note: "Viral reels, TikTok & Shorts optimization" }
+      ]
+    },
+    {
+      id: "sk-3",
+      category: "DESIGN & BRANDING",
+      description: "Editorial layouts, Swiss-inspired typography, brand identity systems, and product packaging.",
+      skills: [
+        { name: "Figma", level: "Master", note: "UI/UX prototypes, components, auto-layout tokens" },
+        { name: "Adobe Photoshop", level: "Master", note: "Photo manipulation, product staging, high-end compositing" },
+        { name: "Adobe Illustrator", level: "Advanced", note: "Vector identities, logotypes, print collateral" },
+        { name: "Editorial Typography", level: "Expert", note: "Grid systems, paired display and grotesk hierarchy" },
+        { name: "Packaging Design", level: "Advanced", note: "3D box mockups, label layout, luxury finishing" }
+      ]
+    },
+    {
+      id: "sk-4",
+      category: "ENTREPRENEURSHIP & GROWTH",
+      description: "Building ventures, content distribution, educational ecosystems, and commercial strategy.",
+      skills: [
+        { name: "Brand Positioning", level: "Advanced", note: "Defining unique value propositions and brand voice" },
+        { name: "Content Funnels", level: "Master", note: "Organic reach, video virality, and lead capture" },
+        { name: "Digital Products", level: "Advanced", note: "Packaging knowledge, SaaS, and digital assets" },
+        { name: "Community Building", level: "Advanced", note: "Leading youth clubs, cohorts, and workshops" }
+      ]
+    }
+  ],
+  messages: [
+    {
+      id: "msg-1",
+      name: "Sabrina Hossain",
+      email: "sabrina@dhakacreatives.co",
+      company: "Dhaka Creatives Collective",
+      projectType: "Branding",
+      budget: "$1,000 — $2,500",
+      message: "Hey Abu Bakr, we loved the Varnox fragrance packaging and your work on EquiSaaS. We're launching an artisan lifestyle brand in Banani next month and would love to collaborate on the visual identity and launch video.",
+      status: "read",
+      createdAt: "2026-10-04T14:32:00Z"
+    },
+    {
+      id: "msg-2",
+      name: "Marcus Vance",
+      email: "marcus@vancecapital.io",
+      company: "Vance Media Labs",
+      projectType: "Video",
+      budget: "$2,500 — $5,000",
+      message: "Saw your Agency Alap video lecture on retention editing. Looking for a lead creative director to overhaul our YouTube and short-form video pipelines. Let's schedule a call this week.",
+      status: "new",
+      createdAt: "2026-10-05T09:15:00Z"
+    }
+  ]
+};
